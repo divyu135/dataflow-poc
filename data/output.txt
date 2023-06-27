@@ -1,0 +1,72 @@
+lastLLevel: dir1 , secondLastLevel: dir1
+matched: dirA/dirB/dirC/dir1/dir1/file1.txt
+
+lastLLevel: dir1 , secondLastLevel: dir1
+matched: dirA/dirB/dirC/dir1/dir1/file2.txt
+
+lastLLevel: dir2 , secondLastLevel: dir2
+matched: dirA/dirB/dirC/dir2/dir2/file1.txt
+
+lastLLevel: dir2 , secondLastLevel: dir2
+matched: dirA/dirB/dirC/dir2/dir2/file2.txt
+
+lastLLevel: dir3 , secondLastLevel: dir3
+matched: dirA/dirB/dirC/dir3/dir3/file1.txt
+
+lastLLevel: dir3 , secondLastLevel: dir3
+matched: dirA/dirB/dirC/dir3/dir3/file2.txt
+
+lastLLevel: dir4 , secondLastLevel: dirC
+lastLLevel: dir4 , secondLastLevel: dirC
+lastLLevel: dir5 , secondLastLevel: dir5
+matched: dirX/dirY/dirZ/dir5/dir5/file1.txt
+
+lastLLevel: dir5 , secondLastLevel: dir5
+matched: dirX/dirY/dirZ/dir5/dir5/file2.txt
+
+lastLLevel: dir6 , secondLastLevel: dir6
+matched: dirX/dirY/dirZ/dir6/dir6/file1.txt
+
+lastLLevel: dir6 , secondLastLevel: dir6
+matched: dirX/dirY/dirZ/dir6/dir6/file2.txt
+
+lastLLevel: dir7 , secondLastLevel: dir7
+matched: dirX/dirY/dirZ/dir7/dir7/file1.txt
+
+lastLLevel: dir7 , secondLastLevel: dir7
+matched: dirX/dirY/dirZ/dir7/dir7/file2.txt
+
+lastLLevel: dir8 , secondLastLevel: dirC
+lastLLevel: dir8 , secondLastLevel: dirC
+lastLLevel: dir9 , secondLastLevel: dirC
+lastLLevel: dir9 , secondLastLevel: dirC
+lastLLevel: dir10 , secondLastLevel: dir10
+matched: dirA/dirB/dirC/dir10/dir10/file1.txt
+
+lastLLevel: dir10 , secondLastLevel: dir10
+matched: dirA/dirB/dirC/dir10/dir10/file2.txt
+
+lastLLevel: dir11 , secondLastLevel: dir11
+matched: dirA/dirB/dirC/dir11/dir11/file1.txt
+
+lastLLevel: dir11 , secondLastLevel: dir11
+matched: dirA/dirB/dirC/dir11/dir11/file2.txt
+
+lastLLevel: dir12 , secondLastLevel: dirC
+lastLLevel: dir12 , secondLastLevel: dirC
+lastLLevel: dir13 , secondLastLevel: dirZ
+lastLLevel: dir13 , secondLastLevel: dirZ
+lastLLevel: dir14 , secondLastLevel: dirZ
+lastLLevel: dir14 , secondLastLevel: dirZ
+lastLLevel: dir15 , secondLastLevel: dirC
+lastLLevel: dir15 , secondLastLevel: dirC
+lastLLevel: dir16 , secondLastLevel: dirC
+lastLLevel: dir16 , secondLastLevel: dirC
+lastLLevel: dir17 , secondLastLevel: dirC
+lastLLevel: dir17 , secondLastLevel: dirC
+lastLLevel: dir18 , secondLastLevel: dirC
+lastLLevel: dir18 , secondLastLevel: dirC
+lastLLevel: dir19 , secondLastLevel: dirC
+lastLLevel: dir19 , secondLastLevel: dirC
+lastLLevel: dir20 , secondLastLevel: dirC
+lastLLevel: dir20 , secondLastLevel: dirC

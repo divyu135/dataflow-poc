@@ -29,14 +29,15 @@ public class MyPipeline {
             String path = c.element();
             String[] levels = path.split("/");
             
-            if (levels.length >= 2){
-                String lastLLevel = levels[levels.length - 1];
-                String secondLastLevel = levels[levels.length -2];
+            if (levels.length >= 2){                
+                String lastLLevel = levels[levels.length - 2];
+                String secondLastLevel = levels[levels.length -3];
+                c.output("lastLLevel: " + lastLLevel + " , secondLastLevel: " + secondLastLevel);
                 if (lastLLevel.equals(secondLastLevel)){
-                    c.output(path);
+                    LOG.info("Second Last Directory Level Matched Last Level for path : " + path);
+                    c.output("matched: " + path + "\n");
                 }
             } 
-           
         }
     }
 
