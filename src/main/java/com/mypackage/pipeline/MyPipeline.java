@@ -28,10 +28,15 @@ public class MyPipeline {
         public void processElement(ProcessContext c) throws Exception {
             String path = c.element();
             String[] levels = path.split("/");
-            //probably wrong, maybe will do something different
-            if (levels.length >= 3 && levels[levels.length - 2].equals(levels[levels.length - 1])) {
-                c.output(path);
-            }
+            
+            if (levels.length >= 2){
+                String lastLLevel = levels[levels.length - 1]
+                String secondLastLevel = levels[levels.length -2]
+                if (lastLLevel.equals(secondLastLevel)){
+                    c.output(path);
+                }
+            } 
+           
         }
     }
 
@@ -46,8 +51,8 @@ public class MyPipeline {
         String output = "gs://dataflow-poc-divya/output/test-output.txt";
 
         pipeline.apply("ReadFromGCS", TextIO.read().from(input))
-                .apply("ParseJson", ParDo.of(new CheckNestedDirectory()));
-                // need to write output
+                .apply("ParseFilePaths", ParDo.of(new CheckNestedDirectory()))
+                .apply("Write Output", TextIO.write().to(output));
         LOG.info("Building pipeline...");
 
         return pipeline.run();
