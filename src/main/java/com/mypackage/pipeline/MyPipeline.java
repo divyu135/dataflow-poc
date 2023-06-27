@@ -30,8 +30,8 @@ public class MyPipeline {
             String[] levels = path.split("/");
             
             if (levels.length >= 2){
-                String lastLLevel = levels[levels.length - 1]
-                String secondLastLevel = levels[levels.length -2]
+                String lastLLevel = levels[levels.length - 1];
+                String secondLastLevel = levels[levels.length -2];
                 if (lastLLevel.equals(secondLastLevel)){
                     c.output(path);
                 }
@@ -47,7 +47,7 @@ public class MyPipeline {
         options.setJobName("my-pipeline-" + System.currentTimeMillis());
 
         // input and output
-        String input = "gs://dataflow-poc-divya/input/test-input.txt";
+        String input = "gs://dataflow-poc-divya/input/input.txt";
         String output = "gs://dataflow-poc-divya/output/test-output.txt";
 
         pipeline.apply("ReadFromGCS", TextIO.read().from(input))
